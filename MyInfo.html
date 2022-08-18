@@ -1,0 +1,60 @@
+<html>
+	<head>
+		<title>Teaser</title>
+		<link rel="stylesheet" href="MyInfo.Css" />
+	</head>
+	<body>
+		<h1>My Info</h1>
+		<!--Name -->
+		<form id="myform">
+			<label for="fname">First name:</label><br />
+			<input type="text" id="fname" name="fname" /><br />
+			<label for="lname">Last name:</label><br />
+			<input type="text" id="lname" name="lname" /><br />
+
+			<!-- Age -->
+
+			<label for="Age">Age:</label><br />
+			<input type="number" id="Age" name="Age" /><br />
+
+			<!-- Gender -->
+			<label for="Age">Gender:</label><br />
+			<input type="radio" id="gender" name="male" value="male" />
+			<label for="Male">Male</label>
+			<input type="radio" id="gender" name="male" value="female" />
+			<label for="Female">Female</label>
+			<br />
+			<!-- City -->
+			<br />
+			<div>
+				<select>
+					<option disabled hidden selected>Select City</option>
+					<option id="area" value="Islamabad">Islamabad</option>
+					<option id="area" value="Lahore">Lahore</option>
+					<option id="area" value="Karachi">Karachi</option>
+					<option id="area" value="Peshawar">Peshawar</option>
+					<option id="area" value="Skardu">Skardu</option>
+					<option id="area" value="Sakhar">Sakhar</option>
+				</select>
+			</div>
+			<!-- Hobbies -->
+			<h4>Hobbies</h4>
+			<input type="checkbox" id="hobby" name="hobby" value="swim" />
+			<label for="swim"> Swimming</label>
+			<input type="checkbox" id="hobby" name="hobby" value="drive" />
+			<label for="drive"> Driving</label>
+			<input type="checkbox" id="hobby" name="hobby" value="game" />
+			<label for="game"> Gaming</label><br />
+			<input type="checkbox" id="hobby" name="hobby" value="read" />
+			<label for="Read"> Reading</label>
+			<input type="checkbox" id="hobby" name="hobby" value="garden" />
+			<label for="garden"> Gardening</label>
+			<input type="checkbox" id="hobby" name="hobby" value="Code" />
+			<label for="code"> Coding</label><br /><br />
+			<button type="button" id="btnClick" onclick="Greeting()">Submit</button>
+			<script src="MyInfo.js"></script>
+		</form>
+
+		<script></script>
+	</body>
+</html>
