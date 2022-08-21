@@ -1,10 +1,12 @@
 const Greeting = () => {
+	const myForm = document.getElementById('myForm');
+	const formElements = myForm.elements;
+	const gender = formElements.gender.value;
 	const myFirstName = document.getElementById('fname').value;
 	const mylastName = document.getElementById('lname').value;
 	const myAge = document.getElementById('Age').value;
-	const myGender = document.getElementById('gender').value;
 	const myRegion = document.getElementById('area').value;
-	const myHobbies = document.getElementById('hobby').value;
+	const myHobbies = getHobbies();
 	alert(
 		'Your Details' +
 			'\nfirst Name: ' +
@@ -14,7 +16,7 @@ const Greeting = () => {
 			'\nAge: ' +
 			myAge +
 			'\nGender: ' +
-			myGender +
+			gender +
 			'\nRegion: ' +
 			myRegion +
 			'\nHobbies: ' +

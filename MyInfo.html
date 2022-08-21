@@ -1,11 +1,11 @@
+<!DOCTYPE html>
 <html>
 	<head>
-		<title>My Form</title>
-		<link rel="stylesheet" href="MyInfo.Css" />
+		<title>My Info</title>
 	</head>
 	<body>
 		<h1>My Info</h1>
-		<form id="myform">
+		<form id="myForm">
 			<label for="fname">First name:</label><br />
 			<input type="text" id="fname" name="fname" /><br />
 			<label for="lname">Last name:</label><br />
@@ -15,7 +15,7 @@
 			<label for="Age">Gender:</label><br />
 			<input type="radio" id="gender" name="male" value="male" />
 			<label for="Male">Male</label>
-			<input type="radio" id="gender" name="male" value="female" />
+			<input type="radio" id="gender" name="female" value="female" />
 			<label for="Female">Female</label>
 			<br />
 			<br />
@@ -31,17 +31,17 @@
 				</select>
 			</div>
 			<h4>Hobbies</h4>
-			<input type="checkbox" id="hobby" name="hobby" value="swim" />
+			<input type="checkbox" id="hobby" name="hobby" value="swim" class="hobbyCheckbox" />
 			<label for="swim"> Swimming</label>
-			<input type="checkbox" id="hobby" name="hobby" value="drive" />
+			<input type="checkbox" id="hobby" name="hobby" value="drive" class="hobbyCheckbox" />
 			<label for="drive"> Driving</label>
-			<input type="checkbox" id="hobby" name="hobby" value="game" />
+			<input type="checkbox" id="hobby" name="hobby" value="game" class="hobbyCheckbox" />
 			<label for="game"> Gaming</label><br />
-			<input type="checkbox" id="hobby" name="hobby" value="read" />
+			<input type="checkbox" id="hobby" name="hobby" value="read" class="hobbyCheckbox" />
 			<label for="Read"> Reading</label>
-			<input type="checkbox" id="hobby" name="hobby" value="garden" />
+			<input type="checkbox" id="hobby" name="hobby" value="garden" class="hobbyCheckbox" />
 			<label for="garden"> Gardening</label>
-			<input type="checkbox" id="hobby" name="hobby" value="Code" />
+			<input type="checkbox" id="hobby" name="hobby" value="Code" class="hobbyCheckbox" />
 			<label for="code"> Coding</label><br /><br />
 			<button type="button" id="btnClick" onclick="Greeting()">Submit</button>
 		</form>
